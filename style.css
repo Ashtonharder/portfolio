@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box model to all elements */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+  margin: 0;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  border-bottom: 2px solid #ddd; /* Border at the bottom of the header */
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-top: 10px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: darkolivegreen;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid #555; /* Border at the bottom of the navigation bar */
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Main Content Layout */
+main {
+  display: flex;
+  flex: 1;
+}
+
+/* Name and Photo Section */
+#name-photo {
+  flex: 1;
+  padding: 20px;
+  border-right: 2px solid #ddd; /* Border at the right of the name-photo section */
+}
+
+#name-photo img {
+  padding: 10px;
+  width: 250px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+
+/* Contact Me Section */
+#contact {
+  padding: 20px;
+  border-top: 2px solid #ddd; /* Border at the top of the contact section */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .quadrant {
+    flex: 1;
+  }
+}
